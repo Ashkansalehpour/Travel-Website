@@ -1,8 +1,9 @@
 // Create Accordion for FAQ section
-const accordion = document.getElementsByClassName('contentBx');
+const accordion = document.querySelectorAll('.contentBx');
 // When we click on .contentBx function call and work with our click
-for(i = 0; i<accordion.length; i++){
-    accordion[i].addEventListener('click', function(){
-        this.classList.toggle('active')
+
+accordion.forEach(item => {
+    item.addEventListener('click', () => {
+        item.classList.toggle('active')
     })
-}
+})

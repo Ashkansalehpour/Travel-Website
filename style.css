@@ -14,6 +14,7 @@
   font-family: airbnb-bold;
   src: url(fonts/AirbnbCereal_W_Bd.otf);
 }
+
 @font-face {
   font-family: airbnb;
   src: url(fonts/AirbnbCereal_W_Bk.otf);
@@ -51,6 +52,7 @@ h6 {
 html {
   scroll-behavior: smooth;
 }
+
 body {
   margin: 0;
   background-color: #f4f4f4;
@@ -76,6 +78,7 @@ li {
   font-size: 16px;
   text-decoration: none;
 }
+
 /* Start Header */
 header {
   display: flex;
@@ -113,6 +116,7 @@ nav a {
 nav a:hover {
   color: gray;
 }
+
 /* End NavBar */
 header button {
   border: none;
@@ -127,6 +131,7 @@ header button {
 header button:hover {
   color: gray;
 }
+
 /* End Header */
 
 /* Start Intro section */
@@ -164,6 +169,7 @@ header button:hover {
   font-size: 13px;
   color: var(--gray-font);
 }
+
 /* Start IntroBox */
 
 .intro-box nav {
@@ -223,6 +229,7 @@ header button:hover {
   color: #222222;
   border: 1 solid #020202f2;
 }
+
 /* End IntroBox */
 
 /* End Intro section */
@@ -346,9 +353,11 @@ header button:hover {
 .destination-text-left {
   text-align: left;
 }
+
 .destination-text-left li {
   margin-left: 19px;
 }
+
 .destination-text-left li:last-of-type {
   color: gold;
 }
@@ -400,6 +409,7 @@ header button:hover {
 .destination-second-box li {
   display: block;
 }
+
 /* ThirdBox */
 
 .destination-third-box {
@@ -457,6 +467,7 @@ header button:hover {
   transform: scale(1.07);
   z-index: 3;
 }
+
 .destination-forth-box button {
   top: 14px;
   position: absolute;
@@ -478,6 +489,7 @@ header button:hover {
 .destination-forth-box li {
   display: block;
 }
+
 /* End destination Section */
 
 /* Start Experience section */
@@ -506,6 +518,7 @@ header button:hover {
 .right-side-experience {
   text-align: left;
 }
+
 .experience span {
   font-size: 40px;
   font-family: "airbnb-bold";
@@ -558,6 +571,7 @@ header button:hover {
   display: flex;
   justify-content: space-between;
 }
+
 /* TopSide */
 .top-side-inspiration {
   text-align: center;
@@ -657,6 +671,7 @@ header button:hover {
   border-radius: 45px 0px 0px 45px;
   box-shadow: var(--BoxShadow);
 }
+
 .feedback img {
   width: 60%;
 }
@@ -736,13 +751,15 @@ header button:hover {
 
 .accordion .contentBx {
   position: relative;
-  margin: 30px 20px;
+  margin: 10px 0 0 0;
 }
 
 .accordion .contentBx .lable {
   position: relative;
   padding: 10px;
   background-color: var(--white);
+  /* top-left & top-right radius */
+  border-radius: 10px 10px 0 0;
   color: #ffff;
   cursor: pointer;
   color: var(--MidnightMoss);
@@ -756,22 +773,27 @@ header button:hover {
   transform: translateY(-50%);
   font-size: 1.5em;
 }
+
 .accordion .contentBx.active .lable::before {
   content: "-";
+  font-size: 40px;
 }
+
 .accordion .contentBx .content {
   position: relative;
   background: #ffff;
-  height: 0;
-  overflow: hidden; /* Hide Accordion box*/
+  overflow: hidden;
+  transform: scaleY(0);
+  transform-origin: top;
+  /* Hide Accordion box*/
   transition: 0.5s;
 }
 
 .accordion .contentBx.active .content {
   /* Giving  Style to accordion box active mode*/
-  height: 30px;
-  padding: 20px;
+  transform: scaleY(1);
 }
+
 /* End Accordion Boxes */
 /* End FAQ section */
 
@@ -791,6 +813,7 @@ header button:hover {
   align-items: center;
   box-shadow: var(--BoxShadow);
 }
+
 .subscribe h1 {
   margin-top: 130px;
   font-size: 35px;
@@ -892,6 +915,7 @@ footer img {
   flex-direction: column;
   align-items: flex-start;
 }
+
 /* LeftSide of footer */
 .left-footer {
   position: absolute;
@@ -914,6 +938,7 @@ footer img {
 .left-footer i:hover {
   color: var(--BlueStone);
 }
+
 /* MiddleSide of footer */
 .middle-footer {
   line-height: 30px;
